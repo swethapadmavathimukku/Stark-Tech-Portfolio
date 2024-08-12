@@ -55,12 +55,12 @@ html{
     
 }
 .background{
-    background: rgba(0, 0, 0, 0.8) url(bg3.jpg);
+    background: rgba(0, 0, 0, 0.8) url(assets/bg3.jpg);
     background-size: cover;
     background-blend-mode: darken;
 }
 .background1{
-    background: rgb(0, 0, 0, 0.5) url(bg3.jpg);
+    background: rgb(0, 0, 0, 0.5) url(assets/bg3.jpg);
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -80,22 +80,16 @@ html{
     color: white;
     font-size: 21px;
     font-family: 'Alkatra', cursive;
+    transition: color 0.3s ease, text-shadow 0.4s ease-in-out;
 }
 .nav-list li a:hover{
-    /* text-decoration: none; */
-    /* font-weight: bold; */
     color: rgb(238, 10, 10);
-    background-color: whitesmoke;
     border-radius: 8px;
-    /* padding: 2px 8px; */
-    text-shadow: 2px 2px 15px rgba(12, 8, 8, 0.503);
-    text-decoration: underline;
-
+    text-shadow: 2px 2px 15px rgba(255, 238, 107, 0.847);
 }
 .nav-list li a.active{
-color: rgb(238, 10, 10);
-text-decoration: underline;
-
+    color: rgb(238, 10, 10);
+    text-decoration: underline;
 }
 .rightNav{
     width: 40%;
@@ -192,6 +186,7 @@ text-decoration: underline;
     font-size: 35px;
     font-family: 'Roboto', cursive;
     margin-right: 100px;
+    text-shadow: 1px 1px 2px rgb(3, 192, 255), 0 0 1em rgb(120, 0, 0), 0 0 0.2em rgb(120, 0, 0);
 }
 .text-small{
     font-size: 20px;
@@ -229,7 +224,8 @@ text-decoration: underline;
     padding-bottom: 30px;
 }
 .sec{
-    background-color: rgb(187, 114, 96);
+    background-color: rgba(111, 7, 0, 0.819);
+    color: white;
 }
 
 .left{
@@ -239,9 +235,21 @@ text-decoration: underline;
 }
 .imgFluid{
     width: 300px;
-    border: 3px solid rgb(85, 84, 84);
+    /* border: 3px solid rgb(0, 104, 113); */
     border-radius: 10px;
+    z-index: -1;
+    box-shadow: 10px 5px 125px rgba(255, 255, 255, 0.423);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+.imgFluid:hover{
+    transform: scale(1.03) translateY(-2px);
+    cursor: pointer;
+    /* box-shadow: 10px 5px 5px rgba(255, 0, 0, 0.486); */
+    z-index: -1;
+    box-shadow: 10px 5px 125px rgba(255, 0, 0, 0.6);
+}
+
 .paras{
     padding: 0px 60px ;
     margin-left: 50px;
