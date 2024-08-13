@@ -95,14 +95,26 @@ html{
     width: 40%;
     text-align: right;
     padding: 0px 23px;
-    
+}
+
+.rightNav button {
+    color: black;
+    border: none;
+    background-color: white;
+    margin-bottom: 10px;
+
+
 }
 #search{
     padding: 5px;
     font-size: 17px;
-    border: 2px solid grey;
+    border: 1px solid rgba(163, 0, 0, 0.801);
     border-radius: 9px;
- 
+}
+#search::placeholder {
+    color: rgba(127, 20, 1, 0.715);
+    font-style: italic;
+    font-size: 15px;
 }
 .btn{
     padding: 8px 20px;
@@ -224,8 +236,12 @@ html{
     padding-bottom: 30px;
 }
 .sec{
-    background-color: rgba(111, 7, 0, 0.819);
+    /* background-color: rgba(111, 7, 0, 0.819); */
+    background-image: url('assets/bg3.jpg');
+    /* background-color: rgba(0, 0, 0, 0.61); */
+    background-repeat: none;
     color: white;
+    background-size: auto;
 }
 
 .left{
@@ -335,6 +351,9 @@ html{
     }
     #search{
         width: 100%; 
+        /* border:2px solid red; */
+        /* border: none; */
+
     }
     .secondHalf img{
         width: 100%;
