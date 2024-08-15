@@ -198,12 +198,14 @@ html{
     font-size: 35px;
     font-family: 'Roboto', cursive;
     margin-right: 100px;
-    text-shadow: 1px 1px 2px rgb(3, 192, 255), 0 0 1em rgb(120, 0, 0), 0 0 0.2em rgb(120, 0, 0);
+    text-shadow: rgba(255, 77, 0, 0.849) 1px 0 10px !important;
+
 }
 .text-small{
     font-size: 20px;
     font-family: 'Roboto', cursive;
-    margin-right: 100px
+    margin-right: 100px;
+    text-shadow: rgba(255, 0, 195, 0.849) 1px 0 10px !important;
 }
 .btn{
     padding: 8px 20px;
@@ -277,6 +279,7 @@ html{
 .sectionSubTag{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
+    text-shadow: rgba(245, 131, 255, 0.54) 1px 0 10px !important;
 }
 .contact{
     background: rgba(0, 0, 0,0.8) url(contact3.jpg);
