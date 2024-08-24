@@ -10,6 +10,29 @@
 html{
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+    /* background: none; */
+}
+
+::-webkit-scrollbar-thumb {
+    /* background-color: rgb(255, 0, 0); */
+    background: linear-gradient(135deg, rgb(67, 0, 0), rgb(255, 56, 56));
+    border-radius: 4px;
+    border: 1px solid rgb(149, 6, 113);
+    transition: background 0.3s ease-in-out !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, rgb(255, 56, 56), rgb(67, 0, 0));
+}
+
  .DoAnimation{
         /* position: relative; */
 
