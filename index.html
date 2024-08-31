@@ -9,6 +9,12 @@
     <link rel="website icon" href="/assets/icon.png">
 </head>
 <body>
+    
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+  </div>
+
     <nav class="navbar h-nav background">
         <ul class="nav-list visibility">
             <div class="logo"><img src="/assets/icon.png" alt="logo" srcset=""></div>
@@ -100,6 +106,16 @@
 
 
     <script src="script.js"></script>
+    <script>
+        
+        window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+        </script>
+      
 </body>
 
 </html>
