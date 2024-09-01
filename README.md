@@ -38,9 +38,9 @@ To get started with the Stark Tech Portfolio, follow these steps:
     Simply open the **index.html** file in your browser to view the website.
 
 
-## Contact 📧
+## Contact Me 📧
 
-Feel free to reach out if you have any questions or suggestions:
+Feel free to reach out if you have any questions or suggestions. **I'd Love to hear** ❤️:
 
 - **My GitHub**: [https://github.com/aslams2020](https://github.com/aslams2020)
 - **My LinkedIn**: [Aslam Sayyad](https://www.linkedin.com/in/aslamsayyad02/)
