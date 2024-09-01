@@ -10,7 +10,6 @@ Welcome to the **Stark Tech Portfolio** project, a tribute to Iron Man! This por
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
-- [Contact](#contact)
 
 ## Features ✨
 
@@ -46,3 +45,12 @@ Feel free to reach out if you have any questions or suggestions:
 - **My GitHub**: [https://github.com/aslams2020](https://github.com/aslams2020)
 - **My LinkedIn**: [Aslam Sayyad](https://www.linkedin.com/in/aslamsayyad02/)
 
+
+## 🌟 Star the Project
+
+If you like this project, please give it a star on GitHub! ⭐
+
+[![GitHub stars](https://img.shields.io/github/stars/aslams2020/Stark-Tech-Portfolio.svg?style=social&label=Star)](https://github.com/aslams2020/Stark-Tech-Portfolio)
+<br>
+
+### Thankyou For the Visit! ❤️📈
