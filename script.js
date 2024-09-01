@@ -9,3 +9,6 @@ burger.addEventListener('click', ()=>{
     navbar.classList.toggle('h-nav');
 
 })
+
+const currentYear = new Date().getFullYear();
+document.getElementById('year').textContent = currentYear;
