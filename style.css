@@ -428,3 +428,10 @@ html{
         text-align: center;
     }
 }
+
+
+.mygithub {
+    color: white;
+    text-decoration: none;
+    text-shadow: rgba(255, 0, 144, 0.629) 1px 0 6px;
+}
