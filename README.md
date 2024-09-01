@@ -11,8 +11,6 @@ Welcome to the **Stark Tech Portfolio** project, a tribute to Iron Man! This por
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Features ✨
