@@ -30,7 +30,7 @@ html{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(135deg, rgb(255, 56, 56), rgb(67, 0, 0));
+    background: linear-gradient(135deg, rgb(243, 18, 18), rgb(112, 2, 2));
 }
 
 #progress-container {
