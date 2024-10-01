@@ -87,13 +87,14 @@ html{
 
 /* Main Nav */
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
 }
 .background{
   background: rgba(0, 0, 0, 0.8) url(assets/bg3.jpg);
@@ -499,7 +500,8 @@ html{
   
 /* Footer */
 .mygithub {
-  color: white;
-  text-decoration: none;
-  text-shadow: rgba(255, 0, 144, 0.629) 1px 0 6px;
+    color: white;
+    text-decoration: none;
+    text-shadow: rgba(255, 0, 144, 0.629) 1px 0 6px;
+
 }
