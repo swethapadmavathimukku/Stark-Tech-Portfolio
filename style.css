@@ -215,11 +215,11 @@ html{
 }
 
 .firstHalf{
-  
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: float 1.5s ease-in-out infinite alternate;
 }
 .secondHalf{
   width: 30%;
@@ -230,14 +230,13 @@ html{
   border-radius: 10px;
   display: block;
   margin: auto;
-  animation-name: IronImage;
-  animation-direction: reverse;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
+  animation: IronImage 2s ease forwards, float 1.5s ease-in-out infinite alternate;
 
 }
-
+.secondHalf:hover {
+  width:32%;
+  transition: ease-in;
+}
 @keyframes IronImage {      
   from{
       transform: translateX(0px);
@@ -247,7 +246,14 @@ html{
       transform: translateX(450px);
   }
 }
-
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px); /* Adjust this value for the float height */
+  }
+}
 .text-big{
   font-size: 35px;
   font-family: 'Roboto', cursive;
