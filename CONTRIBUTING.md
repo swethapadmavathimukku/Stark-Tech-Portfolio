@@ -78,7 +78,7 @@ After submitting your pull request, a maintainer will review your code. Be prepa
 - **Testing**: Ensure changes are thoroughly tested, especially responsive design elements.
 
 ## Code of Conduct
-We follow the [Code of Conduct](link-to-code-of-conduct). All contributors are expected to adhere to these guidelines to maintain a respectful and collaborative environment.
+We follow the [Code of Conduct](https://github.com/aslams2020/Stark-Tech-Portfolio/blob/main/CODE_OF_CONDUCT.md). All contributors are expected to adhere to these guidelines to maintain a respectful and collaborative environment.
 
 ## Thank You for Contributing!
 Your time and effort in contributing to the Stark Tech Portfolio project are highly appreciated. Let’s keep improving this portfolio and making it a true tribute to the innovation of Stark Industries!
