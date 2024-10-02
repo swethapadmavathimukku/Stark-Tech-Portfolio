@@ -77,6 +77,10 @@ html{
   justify-content: center;
   align-items: center;
 }
+#ironmask{
+  cursor: pointer;
+}
+
 .logo img{
   width: 20%;
   border: 3px solid white;
@@ -94,7 +98,6 @@ html{
     position: sticky;
     top: 0;
     z-index: 1;
-
 }
 .background{
   background: rgba(0, 0, 0, 0.8) url(assets/bg3.jpg);
@@ -204,7 +207,7 @@ html{
 /* Hero Section */
 
 .firstSection{
-  height: 100vh; 
+  height: 90vh; 
 }
 
 .firstHalf{
@@ -342,7 +345,7 @@ html{
   background: rgba(0, 0, 0,0.8) url(contact3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 120%;
+  height: 70vh;
 }
 
 #name{
@@ -505,4 +508,9 @@ html{
     text-decoration: none;
     text-shadow: rgba(255, 0, 144, 0.629) 1px 0 6px;
 
+}
+
+.active{
+  color:rgb(247, 242, 242);
+  text-decoration: underline;
 }
