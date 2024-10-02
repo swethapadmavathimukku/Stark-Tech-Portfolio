@@ -37,6 +37,14 @@ window.addEventListener('scroll', () => {
         }
     });
 
+    //to know if i have reached the bottom of the page
+    const docHeight= document.documentElement.scrollHeight;
+    const windowHeight=window.innerHeight;
+
+    if(window.scrollY+windowHeight>=docHeight-200){
+        current='contact';
+    }
+
     navLinks.forEach(link => {
         link.classList.toggle('active', link.getAttribute('href').includes(current));
     });
