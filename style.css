@@ -7,8 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  scroll-behavior: smooth;
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Vertical Scrollbar Styling :) */
@@ -215,11 +220,11 @@ html{
 }
 
 .firstHalf{
-  
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: float 1.5s ease-in-out infinite alternate;
 }
 .secondHalf{
   width: 30%;
@@ -230,14 +235,13 @@ html{
   border-radius: 10px;
   display: block;
   margin: auto;
-  animation-name: IronImage;
-  animation-direction: reverse;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
+  animation: IronImage 2s ease forwards, float 1.5s ease-in-out infinite alternate;
 
 }
-
+.secondHalf:hover {
+  width:32%;
+  transition: ease-in;
+}
 @keyframes IronImage {      
   from{
       transform: translateX(0px);
@@ -247,7 +251,14 @@ html{
       transform: translateX(450px);
   }
 }
-
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px); /* Adjust this value for the float height */
+  }
+}
 .text-big{
   font-size: 35px;
   font-family: 'Roboto', cursive;
@@ -519,6 +530,7 @@ html{
   text-decoration: underline;
 }
 
+
 /* Ensure navbar has fixed position */
 .navbar {
   position: fixed;
@@ -534,6 +546,7 @@ html{
   text-align: center;
 }
 
+/* Styling for movie headings */
 .movies-heading {
   font-size: 2.5rem;
   font-family: 'Arial', sans-serif;
@@ -553,6 +566,7 @@ html{
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Add shadow for the image */
 }
+
 /* General body and background */
 body {
   font-family: Arial, sans-serif;
@@ -603,7 +617,8 @@ body {
 
 /* Movie title below the image */
 .movie-title {
-  font-size: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
   color: #ffffff;
   margin-top: 10px;
 }
@@ -614,12 +629,51 @@ h1, h2 {
   margin-top: 20px; /* Optional: Adjust margin for spacing */
 }
 
-.movie-title {
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
 .imdb-rating {
   margin-left: 20px; /* Add space between title and IMDb rating */
 }
+
+/* Back to Top button style */
+#BacktoTop {
+  display: block; /* Ensure the button is part of the layout */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;  
+  height: 55px; 
+  background-color: rgb(170, 5, 5); 
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px; 
+  font-size: 24px;  
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s, visibility 1.5s, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 2px #FFF, 0 0 0 3px #262626, 0 0 6px 2px rgba(255, 255, 255, 0.2); /* Adjusted outer rings */
+  overflow: hidden;
+}
+
+.circle1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#BacktoTop:hover {
+  background-color: rgb(106, 12, 11); /* Darker shade on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+#BacktoTop svg {
+  fill: #b4a933; 
+  transition: fill 0.3s ease-in-out;
+}
+
+#BacktoTop:hover svg {
+  fill: #ffd700; 
+}
+
 
