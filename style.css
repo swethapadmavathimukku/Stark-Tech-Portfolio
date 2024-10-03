@@ -518,3 +518,72 @@ html{
   color:rgb(247, 242, 242);
   text-decoration: underline;
 }
+
+
+
+.footer-list{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+
+
+}
+.footer-list ul {
+  list-style: none;
+  padding: 20px;
+  
+}
+.footer-list h3{
+  font-size: 2rem;
+  color: white;
+  margin-top: 40px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 2rem;
+
+}
+
+/* Social Media Icons */
+.social-icons a {
+  color: white;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects for social media icons */
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+/* Specific hover colors for different social media platforms */
+.social-icons .fa-facebook:hover {
+  color: #3b5998;
+}
+
+.social-icons .fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.social-icons .fa-instagram:hover {
+  color: #e1306c;
+}
+
+.social-icons .fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.social-icons .fa-github:hover {
+  color: #6e5494;
+}
+
+
+
+
