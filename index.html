@@ -112,14 +112,7 @@
 
 
     <script>
-            window.addEventListener('scroll', function() {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            document.getElementById('progress-bar').style.width = scrolled + '%';
-        });
-
-        /* Back to Top Button */
+    /* Back to Top Button */
         const scrollToTopBtn = document.getElementById("BacktoTop");
         window.onscroll = function() {
             scrollFunction();
@@ -137,6 +130,17 @@
             // Smooth scroll back to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+    </script>
+
+    
+    <script>
+            window.addEventListener('scroll', function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+
     </script>
     <script src="./Js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
