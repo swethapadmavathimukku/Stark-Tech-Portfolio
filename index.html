@@ -31,7 +31,7 @@
 
         <div class="rightNav visibility">
             <form class="search-bar">
-            <input type="text" name="search"  placeholder="Search the website">
+            <input type="text" id="search-bar" name="search"  placeholder="Search the website">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
@@ -47,8 +47,8 @@
                 <p class="text-big"> <strong>Who is Ironman ?</strong></p>
                 <p class="text-small">Iron Man is a superhero appearing in American comic books published by Marvel Comics. The character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense, and received his own title in Iron Man. In 1963, the character founded the Avengers superhero team with Thor, Ant-Man, Wasp and the Hulk.</p>
                 <div class="buttons">
-                    <button class="btn">Movies</button>
-                    <button class="btn"> <a class="" href="https://www.youtube.com/watch?v=W54Y0cn78NY" target="_blank"></a>Watch Video </button>
+                    <button class="btn" onclick="window.location.href='movies.html'">Movies</button>
+                    <button class="btn" onclick="window.location.href='videos.html'" target="_blank">Watch Video</button>
                 </div>
             </div>
             <div class="secondHalf">
@@ -95,8 +95,13 @@
     <section class="contact" id="contact" >
        <h2 class="text-center" >Contact</h2>
        <div class="form">
-        <input type="text" name="name" id="name" placeholder="Enter your Name">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" oninput="validateText(this)">
+        <span id="error-message" style="color: red; display: none;">You cannot enter numbers or special characters!</span> <br>
+
+        <label for="phone">Phone:</label>
         <input type="number" name="phone" id="name" placeholder="Enter your Phone">
+        <label for="email">Email:</label>
         <input type="email" name="email" id="name" placeholder="Enter your Email">
         <button class="btn submit-btn">Submit</button>
        </div>
@@ -162,14 +167,42 @@
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
             document.getElementById('progress-bar').style.width = scrolled + '%';
+
         });
 
+ </script>
+  <!-- form name  -->
+<script>
+    function validateText(input) {
+       
+        const errorMessage = document.getElementById('error-message');
+
+      
+        const invalidChars = /[^a-zA-Z\s]/g;
+        if (invalidChars.test(input.value)) {
+           
+            errorMessage.style.display = 'inline';
+        } else {
+            
+            errorMessage.style.display = 'none';
+        }
+
+        
+        input.value = input.value.replace(invalidChars, '');
+    }
     </script>
+
     <script src="./Js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+      </script>  
+    <!-- adding automatic focus of cursor     -->
+    <script>
+        window.onload = function() {
+            document.getElementById('search-bar').focus();
+        };
+    </script>
 </body>
 
 </html>
