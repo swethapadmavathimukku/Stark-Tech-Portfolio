@@ -29,7 +29,7 @@
 
         <div class="rightNav visibility">
             <form class="search-bar">
-            <input type="text" name="search"  placeholder="Search the website">
+            <input type="text" id="search-bar" name="search"  placeholder="Search the website">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
@@ -154,7 +154,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+      </script>  
+    <!-- adding automatic focus of cursor     -->
+    <script>
+        window.onload = function() {
+            document.getElementById('search-bar').focus();
+        };
+    </script>
 </body>
 
 </html>
