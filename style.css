@@ -7,8 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  scroll-behavior: smooth;
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Vertical Scrollbar Styling :) */
@@ -117,6 +122,7 @@ html{
   width: 75%;
   display: flex;
   align-items: center;
+  margin-right: 75px;
 }
 .nav-list li{
   list-style: none;
@@ -143,59 +149,58 @@ html{
 
 /* Right Nav */
 
-.rightNav{
+ .rightNav{
   width: 40%;
   text-align: right;
   padding: 0px 23px;
-}
+} 
 
-.rightNav button {
+ .rightNav button {
   color: black;
   border: none;
-  background-color: white;
+  background-color: rgb(238, 10, 10);
   margin-bottom: 10px;
-}
+} 
 
-#search{
-  padding: 5px;
-  font-size: 17px;
-  border: 1px solid rgba(163, 0, 0, 0.801);
-  border-radius: 9px;
-}
-
-#search::placeholder {
-  color: rgba(127, 20, 1, 0.715);
-  font-style: italic;
-  font-size: 15px;
-}
-
-.btn{
-  padding: 8px 20px;
-  border: 2px solid black;
-  border-radius: 8px;
-  margin: 7px 3px;
-  font-size: 15px;
-  background: none;
-  color: black;
-  cursor: pointer;
-}
-.btn a{
-  color: white;
-  text-decoration: none;
-}
-.btn a:hover{
-  color: black;
-  background-color: rgba(255, 255, 255, 0.357);
-
-}
-.btn:hover{
+.search-bar{
+  margin-left: 90px;
+  width:300px;
+  height:40px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
   background-color: white;
-  color: red;
-  font-weight: bolder;
+  border-radius: 60px;
+  padding: 5px 10px;
 }
-.btn-sm{
-  padding: 6px 10px;
-  vertical-align: middle;
+.search-bar input{
+  background: transparent;
+  font-family: 'Alkatra', cursive;
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  align-items: center;
+  padding-left: 25px;
+  color: rgb(238, 10, 10);
+  margin-top: 3px;
+}
+::placeholder{
+  color: rgb(238, 10, 10);
+}
+
+.search-bar button{
+  border: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 9px;
+  margin-right: 7px;
+}
+.search-bar button:hover{
+  transform: scale(1.1);
 }
 .box-main{
   display: flex;
@@ -215,11 +220,11 @@ html{
 }
 
 .firstHalf{
-  
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  animation: float 1.5s ease-in-out infinite alternate;
 }
 .secondHalf{
   width: 30%;
@@ -230,14 +235,13 @@ html{
   border-radius: 10px;
   display: block;
   margin: auto;
-  animation-name: IronImage;
-  animation-direction: reverse;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
+  animation: IronImage 2s ease forwards, float 1.5s ease-in-out infinite alternate;
 
 }
-
+.secondHalf:hover {
+  width:32%;
+  transition: ease-in;
+}
 @keyframes IronImage {      
   from{
       transform: translateX(0px);
@@ -247,7 +251,14 @@ html{
       transform: translateX(450px);
   }
 }
-
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px); /* Adjust this value for the float height */
+  }
+}
 .text-big{
   font-size: 35px;
   font-family: 'Roboto', cursive;
@@ -532,3 +543,158 @@ html{
   color:rgb(247, 242, 242);
   text-decoration: underline;
 }
+
+
+/* Ensure navbar has fixed position */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Make sure the navbar stays on top */
+}
+
+/* Add margin-top to push the section down below the navbar */
+#home {
+  margin-top: 80px; /* Adjust based on your navbar's height */
+  text-align: center;
+}
+
+/* Styling for movie headings */
+.movies-heading {
+  font-size: 2.5rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.ironman-image {
+  width: 160px; /* Adjust the image size */
+  height: auto;
+  vertical-align: middle;
+  margin: 0 30px;
+}
+
+.movies-heading img {
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Add shadow for the image */
+}
+
+/* General body and background */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff; /* Keep text color white for visibility */
+}
+
+/* Background section should remain the same */
+.background1 {
+  padding: 40px 0;
+}
+
+/* Movie Cards Section */
+.movies-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.movie-cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Styling for each movie card */
+.movie-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin: 20px 0;
+  padding: 10px;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Movie image inside card */
+.movie-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Movie title below the image */
+.movie-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ffffff; /* Ensure text is visible on a dark background */
+  margin-top: 20px; /* Optional: Adjust margin for spacing */
+}
+
+.imdb-rating {
+  margin-left: 20px; /* Add space between title and IMDb rating */
+}
+
+/* Back to Top button style */
+#BacktoTop {
+  display: block; /* Ensure the button is part of the layout */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;  
+  height: 55px; 
+  background-color: rgb(170, 5, 5); 
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px; 
+  font-size: 24px;  
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s, visibility 1.5s, box-shadow 0.3s ease;
+  box-shadow: 0 0 0 2px #FFF, 0 0 0 3px #262626, 0 0 6px 2px rgba(255, 255, 255, 0.2); /* Adjusted outer rings */
+  overflow: hidden;
+}
+
+.circle1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#BacktoTop:hover {
+  background-color: rgb(106, 12, 11); /* Darker shade on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+#BacktoTop svg {
+  fill: #b4a933; 
+  transition: fill 0.3s ease-in-out;
+}
+
+#BacktoTop:hover svg {
+  fill: #ffd700; 
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
