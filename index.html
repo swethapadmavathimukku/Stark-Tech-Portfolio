@@ -93,8 +93,13 @@
     <section class="contact" id="contact" >
        <h2 class="text-center" >Contact</h2>
        <div class="form">
-        <input type="text" name="name" id="name" placeholder="Enter your Name">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" oninput="validateText(this)">
+        <span id="error-message" style="color: red; display: none;">You cannot enter numbers or special characters!</span> <br>
+
+        <label for="phone">Phone:</label>
         <input type="number" name="phone" id="name" placeholder="Enter your Phone">
+        <label for="email">Email:</label>
         <input type="email" name="email" id="name" placeholder="Enter your Email">
         <button class="btn submit-btn">Submit</button>
        </div>
@@ -147,9 +152,31 @@
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
             document.getElementById('progress-bar').style.width = scrolled + '%';
+
         });
 
+ </script>
+  <!-- form name  -->
+<script>
+    function validateText(input) {
+       
+        const errorMessage = document.getElementById('error-message');
+
+      
+        const invalidChars = /[^a-zA-Z\s]/g;
+        if (invalidChars.test(input.value)) {
+           
+            errorMessage.style.display = 'inline';
+        } else {
+            
+            errorMessage.style.display = 'none';
+        }
+
+        
+        input.value = input.value.replace(invalidChars, '');
+    }
     </script>
+
     <script src="./Js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
