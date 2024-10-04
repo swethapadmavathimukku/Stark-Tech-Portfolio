@@ -523,23 +523,21 @@ html{
 
 .footer-list{
   display: flex;
-  justify-content:center;
+  justify-content:end;
   align-items:center;
-  flex-direction: column;
-  background-color: black;
-  color: white;
-
-
+  flex-direction:column;
+  background-color: rgb(0, 0, 0);
+  
 }
 .footer-list ul {
   list-style: none;
-  padding: 20px;
-  
 }
+
 .footer-list h3{
-  font-size: 2rem;
+  font-size: 20px;
   color: white;
-  margin-top: 40px;
+
+margin-top: 50px;
 }
 
 .social-icons {
@@ -547,21 +545,24 @@ html{
   align-items: center;
   justify-content: center;
   gap: 15px;
-  font-size: 2rem;
-
+  font-size: 0.5rem;
+margin-top: 20px;
 }
 
 /* Social Media Icons */
 .social-icons a {
-  color: white;
-  font-size: 2rem;
+
+  font-size: 0.5rem;
   transition: all 0.3s ease;
+
+
 }
 
 /* Hover effects for social media icons */
 .social-icons a:hover {
   transform: translateY(-5px);
 }
+
 
 /* Specific hover colors for different social media platforms */
 .social-icons .fa-facebook:hover {
