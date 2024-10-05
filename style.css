@@ -256,12 +256,6 @@ html,body{
   cursor: pointer;
 }
 
-.btn:hover{
-  background-color: #dbdbdb;
-  color: black;
-  font-weight: bolder;
-}
-
 .btn-sm{
   padding: 6px 10px;
   vertical-align: middle;
@@ -327,10 +321,8 @@ html,body{
   height: 100%;
 }
 
-#name{
-  border: 2px solid black;
-  padding: 5px 10px;
-=======
+
+
 .contact p {
   text-align: center;
   font-size: 18px;
@@ -353,15 +345,6 @@ html,body{
   align-items: center;
   flex-direction: column;
 }
-
-.form input{
-  width: 100%;
-  font-size: 20px;
-  border: 2px solid grey;
-  border-radius: 6px;
-  margin: 14px 0px;
-  padding: 3px 10px;
-=======
 
 .form input {
   width: 400px;
@@ -388,8 +371,6 @@ html,body{
       display: block;
       margin: auto;
       margin-bottom: 0px;
-
-=======
 }
 .submit-btn:hover {
   color: white;
