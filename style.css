@@ -66,7 +66,7 @@ html,body{
 /* Left Side Nav */
 .logo{
   width: 40%;
-  margin: 6px 80px 6px 20px;
+  margin: 6px 80px 6px 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,12 +123,12 @@ html,body{
 }
 .nav-list li a:hover{
   color: rgb(238, 10, 10);
-  border-radius: 8px;
+  text-decoration: none;
   text-shadow: 2px 2px 15px rgba(255, 238, 107, 0.847);
 }
 .nav-list li a.active{
   color: rgb(238, 10, 10);
-  text-decoration: underline;
+  border-bottom: 2px solid rgb(238, 10, 10);
 }
 /* Right Nav */
  .rightNav{
@@ -255,11 +255,13 @@ html,body{
   color: white;
   cursor: pointer;
 }
+
 .btn:hover{
   background-color: #dbdbdb;
   color: black;
   font-weight: bolder;
 }
+
 .btn-sm{
   padding: 6px 10px;
   vertical-align: middle;
@@ -318,14 +320,22 @@ html,body{
 }
 /* Contact form */
 .contact{
-  background: rgba(0, 0, 0,0.8) url(contact3.jpg);
+  background: rgba(0, 0, 0, 0.8) url(contact3.jpg);
+  padding-bottom: 5%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
 }
+
 #name{
   border: 2px solid black;
   padding: 5px 10px;
+=======
+.contact p {
+  text-align: center;
+  font-size: 18px;
+  margin: 1% 1% 3% 1%;
+
 }
 .text-center{
   text-align: center;
@@ -337,7 +347,13 @@ html,body{
 .form{
   max-width: 500px;
   margin: auto;
+  background-color: rgba(255, 185, 185, 0.107);
+  padding: 2% 2% 2% 2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
 .form input{
   width: 100%;
   font-size: 20px;
@@ -345,6 +361,26 @@ html,body{
   border-radius: 6px;
   margin: 14px 0px;
   padding: 3px 10px;
+=======
+
+.form input {
+  width: 400px;
+  height: 40px;
+  background-color: none;
+  border: none;
+  color: white;
+  background-color: rgba(255, 185, 185, 0);
+  border-bottom: 3px solid rgb(255, 226, 226);
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding-left: 3%;
+  padding-bottom: -1%;
+}
+.form input::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border: none;
+
 }
 .submit-btn{
       color: white;
@@ -352,6 +388,14 @@ html,body{
       display: block;
       margin: auto;
       margin-bottom: 0px;
+
+=======
+}
+.submit-btn:hover {
+  color: white;
+  background-color: rgb(75, 0, 0);
+  border: none;
+
 }
 .text-footer{
   text-align: center;
@@ -379,6 +423,7 @@ html,body{
   .nav-list {
       flex-direction: column;
       align-items: center; /* Added for central alignment */
+      margin-right: 0px;
   }
   .navbar {
       flex-direction: column;
@@ -410,7 +455,7 @@ html,body{
       display: block;
   }
   .h-nav {
-      height: 75px;
+      height: 85px;
   }
   .visibility {
       visibility: hidden;
@@ -462,6 +507,13 @@ html,body{
       display: inline-block; /* Make images inline-block for centering */
       margin: 0 auto; /* Center the image */
   }
+  .search-bar{
+    margin-left: 0px;
+}
+.logo a{
+    display: flex;
+    justify-content: center;
+}
 }
   
 /* Footer */
@@ -475,7 +527,9 @@ html,body{
   text-decoration: underline;
 }
 
-
+/*Added SOCIAL- Media icons */
+  
+  
 .footer-list{
   display: flex;
   justify-content:end;
