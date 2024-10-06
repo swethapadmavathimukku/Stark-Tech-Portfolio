@@ -232,6 +232,9 @@ body {
   margin: auto;
   height: 80%;
 }
+a:link,a:visited{
+  color: rgb(226, 96, 10);
+ }
 
 /* Hero Section */
 /* First Section Styling */
