@@ -895,6 +895,12 @@ h2 {
   /* Add space between title and IMDb rating */
 }
 
+.imdd-rating {
+  font-size: 15px;
+  margin-left: 20px;
+  /* Add space between title and IMDb rating */
+}
+
 /* Back to Top button style */
 #BacktoTop {
   display: block;
