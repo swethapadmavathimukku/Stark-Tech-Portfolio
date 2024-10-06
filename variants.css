@@ -30,14 +30,9 @@ transition: background 0.3s ease-in-out !important;
   background: linear-gradient(135deg, rgb(243, 18, 18), rgb(112, 2, 2));
 }
 
-body{
-  background: rgba(0, 0, 0, 0.5) url(assets/bg3.jpg);
-  background-size: contain;
-  background-blend-mode: darken;
-}
 
 #progress-container {
-  position: fixed ;
+  position: fixed;
   top: 0px;
   left: 0;
   width: 100%;
@@ -55,96 +50,130 @@ body{
   border-radius: 10px;
 }
 
-.logo{
+
+.DoAnimation {
+  /* position: relative; */
+  animation-name: Cinematicuni;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+@keyframes Cinematicuni {
+  from {
+    transform: translateX(-450px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/* Left Side Nav */
+.logo {
   width: 40%;
-  margin: 6px 80px 6px 20px;
+  margin: 6px 80px 6px 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#ironmask{
+#ironmask {
   cursor: pointer;
 }
 
-.logo img{
-  width: 20%;
-  height: 20%;
+.logo img {
+  max-width: 75px;
   border: 3px solid white;
   border-radius: 50%;
   padding: 5px;
   margin: 20px 0px;
+  animation: glow 5s infinite alternate;
 }
 
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px -8px #6a0a0a;
+  }
+
+  to {
+    box-shadow: 0 0 10px 8px #7b0a0a;
+  }
+}
 /* Main Nav */
-
-.navbar{
-    height: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.navbar {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.background{
+
+.background {
   background: rgba(0, 0, 0, 0.8) url(assets/bg3.jpg);
   background-size: cover;
   background-blend-mode: darken;
 }
-.background1{
+
+.background1 {
   background: rgb(0, 0, 0, 0.5) url(assets/bg3.jpg);
   background-size: cover;
   background-blend-mode: darken;
 }
-.nav-list{
+
+.nav-list {
   width: 75%;
   display: flex;
   align-items: center;
   margin-right: 75px;
 }
-.nav-list li{
+
+.nav-list li {
   list-style: none;
   padding: 10px 20px;
   font-size: 18px;
   margin: 0px 5px;
 }
-.nav-list li a{
+
+.nav-list li a {
   text-decoration: none;
   color: white;
   font-size: 21px;
   font-family: 'Alkatra', cursive;
   transition: color 0.3s ease, text-shadow 0.4s ease-in-out;
 }
-.nav-list li a:hover{
+
+.nav-list li a:hover {
   color: rgb(238, 10, 10);
-  border-radius: 8px;
+  text-decoration: none;
   text-shadow: 2px 2px 15px rgba(255, 238, 107, 0.847);
 }
-.nav-list li a.active{
+
+.nav-list li a.active {
   color: rgb(238, 10, 10);
-  text-decoration: underline;
+  border-bottom: 2px solid rgb(238, 10, 10);
 }
 
 /* Right Nav */
-
- .rightNav{
+.rightNav {
   width: 40%;
   text-align: right;
   padding: 0px 23px;
-} 
+}
 
- .rightNav button {
+.rightNav button {
   color: black;
   border: none;
   background-color: rgb(238, 10, 10);
   margin-bottom: 10px;
-} 
+}
 
-.search-bar{
+.search-bar {
   margin-left: 90px;
-  width:300px;
-  height:40px;
+  width: 300px;
+  height: 40px;
   max-width: 600px;
   display: flex;
   align-items: center;
@@ -152,7 +181,8 @@ body{
   border-radius: 60px;
   padding: 5px 10px;
 }
-.search-bar input{
+
+.search-bar input {
   background: transparent;
   font-family: 'Alkatra', cursive;
   flex: 1;
@@ -164,11 +194,12 @@ body{
   color: rgb(238, 10, 10);
   margin-top: 3px;
 }
-::placeholder{
+
+::placeholder {
   color: rgb(238, 10, 10);
 }
 
-.search-bar button{
+.search-bar button {
   border: 0;
   border-radius: 50%;
   width: 30px;
@@ -178,10 +209,12 @@ body{
   margin-top: 9px;
   margin-right: 7px;
 }
-.search-bar button:hover{
+
+.search-bar button:hover {
   transform: scale(1.1);
 }
-.box-main{
+
+.box-main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,6 +224,13 @@ body{
   margin: auto;
   height: 80%;
 }
+
+body{
+  background: rgba(0, 0, 0, 0.5) url(assets/bg3.jpg);
+  background-size: contain;
+  background-blend-mode: darken;
+}
+
 #heading{
   margin-top:  30px;
   font-size: 90px;
