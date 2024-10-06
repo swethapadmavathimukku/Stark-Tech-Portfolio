@@ -74,6 +74,76 @@ body {
     }
 }
 
+/*Added SOCIAL- Media icons */
+
+
+.footer-list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+  
+  }
+  
+  .footer-list ul {
+    list-style: none;
+  }
+  
+  .footer-list h3 {
+    font-size: 20px;
+    color: white;
+  
+    margin-top: 50px;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.5rem;
+    margin-top: 20px;
+  }
+  
+  /* Social Media Icons */
+  .social-icons a {
+  
+    font-size: 0.5rem;
+    transition: all 0.3s ease;
+  
+  
+  }
+  
+  /* Hover effects for social media icons */
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  /* Specific hover colors for different social media platforms */
+  .social-icons .fa-facebook:hover {
+    color: #3b5998;
+  }
+  
+  .social-icons .fa-twitter:hover {
+    color: #1da1f2;
+  }
+  
+  
+  .social-icons .fa-instagram:hover {
+    color: #e1306c;
+  }
+  
+  .social-icons .fa-linkedin:hover {
+    color: #0077b5;
+  }
+  
+  .social-icons .fa-github:hover {
+    color: #6e5494;
+  }
+  
+  
 /* Navbar */
 
 .navbar{
@@ -334,11 +404,18 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #161b22;
+    background-color: #161b2200;
     color: #c9d1d9;
     margin-top: 50px;
 }
-
+.text-footer {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+  
 footer p {
     font-size: 14px;
 }
