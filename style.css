@@ -842,8 +842,10 @@ body {
 }
 
 .footer-bar {
+  /* background-color: #0d0101; */
+  text-align: center;
   margin: auto;
-  padding: 1rem;
+  /* padding: 1rem; */
   font-size: 0.9rem;
   .mygithub {
     color: white;
@@ -852,9 +854,15 @@ body {
   }
 }
 
-.footer-bar {
-  background-color: #040101;
+.footer-bar p {
+  position: relative;
+  top: -60px;
 }
+
+/* .footer-bar {
+  background-color: #040101;
+} */
+
 
 @media (max-width: 900px) {
   .footer {
